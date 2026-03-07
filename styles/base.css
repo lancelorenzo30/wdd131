@@ -1,0 +1,117 @@
+:root {
+    --primary-banner-color: #1D4D72;
+    --text-on-banner-color: rgba(229, 229, 229, 1);
+}
+
+* {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+body {
+    font-family: "Grenze", serif;
+    font-weight: 400;
+}
+
+header h3,
+footer {
+    padding: 15px;
+    background-color: var(--primary-banner-color);
+    text-align: center;
+    color: var(--text-on-banner-color);
+}
+
+h1 {
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(32, 32, 32);
+}
+
+nav a {
+    padding: 10px;
+    color: var(--text-on-banner-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--primary-banner-color);
+}
+
+main {
+    display: grid;
+    margin: 15px;
+    gap: 5px;
+}
+
+main h1 {
+    grid-area: 1 / 1 / 2 / 4;
+    text-align: center;
+    margin: 10px;
+}
+
+main section {
+    border: 1px solid rgb(172, 171, 171);
+    border-radius: 10px;
+}
+
+section h4 {
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    color: var(--text-on-banner-color);
+    background-color: var(--primary-banner-color);
+    text-align: center;
+}
+
+section p {
+    margin: 10px;
+}
+
+section h3 {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    margin: 10px;
+    max-width: 400px;
+}
+
+div figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div figcaption {
+    text-align: center;
+}
+
+ul {
+    margin: 80px 50px 50px 10px;
+}
+
+.profile {
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    float: inline-end;
+}
+
+.flag {
+    width: 120px;
+    padding: 10px;
+}
+
+#lastModified {
+    color: yellow;
+}

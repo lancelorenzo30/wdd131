@@ -4,14 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Lance Lorenzo</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Home Page">
     <meta name="author" content="Lance Lorenzo">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@400;800&display=swap" rel="stylesheet">
+
+    <script defer src="scripts/getdates.js"></script>
+
+    <title>WDD 131 - Dynamic Web Fundamentals - Lance Lorenzo</title>
 </head>
 
 <body>
     <header>
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <h3>
+            <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        </h3>
         <nav>
             <a href="www.linkedin.com/in/lance-lorenzo-4b8496326">LinkedIn</a>
             <a href="https://byupw.instructure.com/.">Canvas</a>
@@ -22,29 +32,50 @@
 
     <main>
         <h1>Lance Lorenzo</h1>
-        <section class="card">
+        <section class="card1">
+            <h4>About Me</h4>
+            <img class="profile" src="images/profile.jpg" alt="Lance in his Sunday's best attire">
             <p>My name is Lance. I live in the Philippines in the largest "Pulo" or island named Luzon. I am currently
-                studying as a Software Devoloper in BYU Idaho and also actively looking for a job online relating to
-                Data Entry and such. I have 3 siblings and I am the Eldest. I love eating, especially delicacies here in
-                the Philippines such as <span class="food-name">"dinakdakan"</span> and <span
-                    class="food-name">"batil-patong"</span>.</p>
-            <img src="images/profile.jpg" alt="Lance in his Sunday's best attire">
-        </section>
-        <section class="card">
+                studying as a Software Devoloper. I love eating, especially delicacies here in
+                the Philippines such as <span class="food-name">"dinakdakan"</span> and <span class="food-name">"batil-patong"</span>.</p>
             <h3>Laguna, Philippines</h3>
-            <figure>
-                <img src="images/philippine-flag.jpg" alt="Philippine Flag">
-                <figcaption>Official Flag of the Philippines</figcaption>
-            </figure>
-            <p>The Philippines is an archipelago of 7,641 islands and the world's second-largest, known for having the
-                longest Christmas season (Sept-Jan), being the texting capital of the world, and holding 300+ volcanoes.
-                It is the only predominantly Christian nation in Asia, was named after King Philip II of Spain, and
-                boasts unique biodiversity like the tarsier and the massive Philippine Eagle. </p>
+            <div>
+                <figure>
+                    <img class="flag" src="images/philippine-flag.jpg" alt="Philippine Flag">
+                    <figcaption>Official Flag of the Philippines</figcaption>
+                </figure>
+                <p>The Philippines is an archipelago of 7,641 islands and the world's second-largest, known for having the
+                    longest Christmas season (Sept-Jan).
+                    
+            </div>
+        </section>
+        <section class="card2">
+            <h4>Web Dev Resources</h4>
+            <ul>
+                <li>
+                    <a href="https://dev.to/">Dev.to Community</a>
+                </li>
+                <li>
+                    <a href="https://www.smashingmagazine.com/">Smashing Magazine</a>
+                </li>
+                <li>
+                    <a href="https://css-tricks.com/">CSS Tricks</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/">W3 Schools</a>
+                </li>
+                <li>
+                    <a href="https://www.udemy.com/">Udemy</a>
+                </li>
+                <li>
+                    <a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a>
+                </li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>©<span id="currentyear"></span> 🌴 Lance Lorenzo 🌴 Philippines</p>
+        <p><span id="currentyear"></span> 🌴 Lance Lorenzo 🌴 Philippines</p>
         <p id="lastModified"></p>
     </footer>
 </body>
