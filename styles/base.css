@@ -60,7 +60,7 @@ main section {
     border-radius: 10px;
 }
 
-section h4 {
+section h2 {
     padding: 10px;
     border-radius: 10px 10px 0 0;
     color: var(--text-on-banner-color);
