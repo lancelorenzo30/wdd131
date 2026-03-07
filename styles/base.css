@@ -13,12 +13,15 @@ body {
     font-weight: 400;
 }
 
-header h3,
+header,
 footer {
-    padding: 15px;
     background-color: var(--primary-banner-color);
     text-align: center;
     color: var(--text-on-banner-color);
+}
+
+header h3 {
+    padding: 15px;
 }
 
 h1 {
