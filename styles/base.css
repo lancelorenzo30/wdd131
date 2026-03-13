@@ -13,7 +13,12 @@ body {
     font-weight: 400;
 }
 
-header,
+header {
+    background-color: var(--primary-banner-color);
+    text-align: center;
+    color: var(--text-on-banner-color);
+}
+
 footer {
     background-color: var(--primary-banner-color);
     text-align: center;
