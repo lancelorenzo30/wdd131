@@ -1,0 +1,79 @@
+:root {
+    --primary-banner-color: #1D4D72;
+    --text-on-banner-color: rgba(229, 229, 229, 1);
+}
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Grenze", serif;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-banner-color);
+    color: var(--text-on-banner-color);
+}
+
+header h1 {
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+header nav {
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: darkblue
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    padding: 10px;
+    color: var(--text-on-banner-color);
+    text-decoration: none;
+}
+
+main {
+    max-width: 1000px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+main h1 {
+    padding: 15px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+div figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-banner-color);
+    color: var(--text-on-banner-color);
+}
