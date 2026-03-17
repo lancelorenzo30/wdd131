@@ -1,0 +1,30 @@
+@media screen and (min-width: 40em) {
+    header h1 {
+        flex-wrap: nowrap;
+        font-size: 40px;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    ul {
+        display: flex;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    ul li {
+        display: block;
+        flex: 1 1 100%;
+        font-size: 20px;
+    }
+    
+    main h1 {
+        font-size: 25px;
+    }
+
+    #menu {
+        display: none;
+    }
+}

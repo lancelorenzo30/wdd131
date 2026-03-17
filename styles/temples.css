@@ -4,7 +4,8 @@
 }
 
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -15,48 +16,43 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
     background-color: var(--primary-banner-color);
     color: var(--text-on-banner-color);
 }
 
 header h1 {
-    margin: 0 15px;
-    padding: 10px;
-    font-size: 40px;
-}
-
-header nav {
-    margin: 0 15px;
     padding: 10px;
     font-size: 20px;
 }
 
-nav a:hover {
-    color: darkblue
+nav {
+    width: 100%;
 }
 
 ul {
-    display: flex;
-    gap: 40px;
-    margin: 0;
+    display: none;
     list-style: none;
 }
 
 a {
+    display: block;
     padding: 10px;
+    font-size: 18px;
+    text-align: center;
     color: var(--text-on-banner-color);
     text-decoration: none;
 }
 
-main {
-    max-width: 1000px;
-    margin: 15px auto;
-    text-align: center;
+a:hover {
+    color: darkblue;
 }
 
 main h1 {
+    margin: 10px;
     padding: 15px;
+    font-size: 18px;
+    text-align: center;
 }
 
 div {
@@ -70,10 +66,34 @@ div figure {
     display: grid;
     grid-template-columns: 1fr;
     margin: 5px;
+    text-align: center;
 }
 
 footer {
     text-align: center;
     background-color: var(--primary-banner-color);
     color: var(--text-on-banner-color);
+}
+
+#menu {
+    display: block;
+    color: var(--text-on-banner-color);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#menu::before {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open {
+    display: block;
+
 }
