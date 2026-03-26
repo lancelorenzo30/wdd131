@@ -1,4 +1,43 @@
+:root {
+    --primary-banner: #e3c565;
+    --complimentary-banner: #46C7C7;
+}
+
+* {
+    margin: 0 auto;
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--primary-banner);
+}
+
+h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+p {
+    padding: 5px;
+    text-align: center;
+}
+
+footer {
+    padding: 15px;
+    background-color: var(--primary-banner);
+}
+
 .hero img {
     width: 100%;
     height: auto;
+}
+
+.weather picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    padding: 10px 0 20px 0;
 }

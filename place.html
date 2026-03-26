@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description"
+        content="Philippines country page for WDD 131 featuring nation data, weather information, and responsive images including Boracay Beach.">
     <meta name="author" content="Lance Lorenzo">
 
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
 
     <script src="scripts/place.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
     <title>Country Page | WDD 131</title>
 </head>
@@ -26,30 +31,27 @@
                 <source media="(min-width: 500px)" srcset="images/bora-large.webp">
                 <img src="images/bora-small.webp" alt="Boracay Beach" width="500" height="899">
             </picture>
-        </div>
-        <div class="data">
-            <h2>Data</h2>
-            <p><strong>Area:</strong> 300,000 sq km</p>
-            <p><strong>Population:</strong> 117,482,025</p>
-            <p><strong>Capital:</strong> Manila</p>
-            <p><strong>Languages:</strong> Filipino</p>
-            <p><strong>Currency:</strong> Phlippine Peso</p>
-            <p><strong>Time Zone:</strong> UTC +8</p>
-            <p><strong>Calling Code:</strong> +63</p>
-            <p><strong>Internet TLD:</strong> .ph</p>
-        </div>
-        <div class="weather">
-            <h2>Weather</h2>
-            <div>
+            <div class="data">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 300,000 sq km</p>
+                <p><strong>Population:</strong> 117,482,025</p>
+                <p><strong>Capital:</strong> Manila</p>
+                <p><strong>Languages:</strong> Filipino</p>
+                <p><strong>Currency:</strong> Phlippine Peso</p>
+                <p><strong>Time Zone:</strong> UTC +8</p>
+                <p><strong>Calling Code:</strong> +63</p>
+                <p><strong>Internet TLD:</strong> .ph</p>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
                 <picture>
-                    <source media="(min-width: 500px)" srcset="images/weather.webp">
                     <img src="images/weather.svg" alt="Weather Icon" width="50">
                 </picture>
+                <p><strong>Temperature:</strong> 32 ℃</p>
+                <p><strong>Conditions:</strong> Scattered Thunderstorms</p>
+                <p><strong>Wind:</strong> 18km/h</p>
+                <p><strong>Wind Chill:</strong><span id="windChill"></span></p>
             </div>
-            <p><strong>Temperature:</strong></p>
-            <p><strong>Conditions:</strong></p>
-            <p><strong>Wind:</strong></p>
-            <p><strong>Wind Chill:</strong></p>
         </div>
     </main>
     <footer>
