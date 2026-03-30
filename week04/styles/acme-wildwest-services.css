@@ -1,0 +1,49 @@
+:root {
+    --borderline: thin solid rgb(212, 212, 212);
+    --main-background: black;
+    --complement-background: rgb(54, 53, 53);
+    --main-text: white;
+}
+
+* {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(209, 208, 208);
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+}
+
+th,
+td {
+    border: var(--borderline);
+    padding: 5px 15px;
+}
+
+
+td {
+    text-align: center;
+}
+
+.dark-bg {
+    background-color: var(--main-background);
+    border: none;
+    color: var(--main-text);
+    padding: 10px;
+}
+
+.light-bg {
+    background-color: var(--complement-background);
+    border: none;
+    color: var(--main-text);
+    padding: 10px;
+}
