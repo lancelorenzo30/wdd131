@@ -1,0 +1,125 @@
+:root {
+    --primary-banner-color: #1D4D72;
+    --text-on-banner-color: rgba(229, 229, 229, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Grenze", serif;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--primary-banner-color);
+    color: var(--text-on-banner-color);
+}
+
+header h1 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    display: none;
+    list-style: none;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--text-on-banner-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+main h2 {
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    gap: 10px;
+}
+
+div figure {
+    padding: 10px;
+    background-color: rgb(220, 228, 230);
+    text-align: center;
+}
+
+
+figcaption {
+    width: 150px;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+}
+
+span {
+    color: rgb(63, 1, 63);
+}
+
+img {
+    box-shadow: 0 0 10px 5px rgb(134, 133, 133);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-banner-color);
+    color: var(--text-on-banner-color);
+}
+
+#menu {
+    display: block;
+    color: var(--text-on-banner-color);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#menu::before {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+#currentyear {
+    color: var(--text-on-banner-color);
+}
+
+.open {
+    display: block;
+
+}
