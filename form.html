@@ -6,9 +6,10 @@
     <meta name="description" content="An activity for WDD 131 about product review form using correct practices in structure">
     <meta name="author" content="Lance Lorenzo">
 
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/form.css">
 
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 
     <title>Product Review Form</title>
 </head>
@@ -25,13 +26,17 @@
                 </select>
 
                 <div>Overall Rating</div>
-                <label><input type="radio" name="rating" value="one-star" id="rating" required>&star;</label>
-                <label><input type="radio" name="rating" value="two-star" id="rating" required>&star;&star;</label>
-                <label><input type="radio" name="rating" value="three-star" id="rating" required>&star;&star;&star;</label>
-                <label><input type="radio" name="rating" value="four-star" id="rating" required>&star;&star;&star;&star;</label>
-                <label><input type="radio" name="rating" value="five-star" id="rating" required>&star;&star;&star;&star;&star;</label>
+                <div class="rating">
+                    <label><input type="radio" name="rating" value="one-star" id="rating" required>&star;</label>
+                    <label><input type="radio" name="rating" value="two-star" id="rating" required>&star;&star;</label>
+                    <label><input type="radio" name="rating" value="three-star" id="rating" required>&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="four-star" id="rating" required>&star;&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="five-star" id="rating" required>&star;&star;&star;&star;&star;</label>
+                </div>
 
-                <label>Date of Installation <input type="date" name="dateInstalled" required></label>
+                <div class="date">
+                    <label>Date of Installation <input type="date" name="dateInstalled" required></label>
+                </div>
 
                 <div>Which features did you find useful in the product?</div>
                 <div><i>(Check all that apply)</i></div>
@@ -40,9 +45,13 @@
                 <label><input type="checkbox" name="feature" id="feature" value="easeOfUse">Ease of Use</label>
                 <label><input type="checkbox" name="feature" id="feature" value="performance">Performance</label>
 
-                <label>Written Review <span>(Optional)</span><textarea name="review" id="review"></textarea></label>
+                <div class="review">
+                    <label>Written Review <span>(Optional)</span><textarea name="review" id="review"></textarea></label>
+                </div>
 
-                <label>Your Name <span>(Optional)</span><input type="text" id="name" name="name"></label>
+                <div class="name">
+                    <label>Your Name <span>(Optional)</span><input type="text" id="name" name="name"></label>
+                </div>
             </fieldset>
 
             <input type="submit" value="Post Review">
