@@ -1,73 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A website planning document activity for WDD 131 showing a basic layout of the project with its css and structure.">
+    <meta name="description"
+        content="Cuisinero Catering offers authentic Filipino Cuisine for weddings, birthdays, and corporate events. Experience flavors you won't forget">
     <meta name="author" content="Lance Lorenzo">
 
     <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-small.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
     <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/nav.js"></script>
 
-    <title>Website Planning Document</title>
+    <title>Cuisinero</title>
 </head>
+
 <body>
     <header>
-        <img src="images/cuisinero.png" alt="Cuisinero" width="200">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">History</a></li>
-            </ul>
+        <img class="logo" src="images/cuisinero.png" alt="Cuisinero" width="200">
+        <nav id="nav-menu">
+            <a href="siteplan.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Cuisinero</h2>
-            <p>This name is a play on words combining the english word cuisine and the tagalog word <i>'Kusinero'</i>. The tagalog word means chef in english and so the whole word means The cooking style of the chef.</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>A taste of the Philippines You Won't Forget</h2>
+                <p>Bringing authentic Filipino flavors to your most important moments.</p>
+            </div>
+            <img src="images/events/boodle.webp" alt="Boodle Fight" loading="lazy">
         </section>
-        <section>
-            <h2>Purpose</h2>
-            <p>This sites provides information on what catering services it offers such as meal plans, places, setups and additional services.</p>
-        </section>
-        <section>
-            <h2>FAQ</h2>
-            <p>What kind of foods do you offer?</p>
-            <p>What's the minimum headcount price for your service?</p>
-        </section>
-        <section class="schema">
-            <h2 class="headings">Color Schema</h2>
-            <p>Text Headings - Tiger Orange</p>
-            <p class="text-on-banner">Text on Banners - Charcoal Brown</p>
-            <p>Banners & footer- Dusk Blue</p>
-            <p>Background - Alabaster Grey</p>
-        </section>
-        <section class="fonts">
-            <h2>Font/s</h2>
-            <p>Headings, Navigation Menu & Main Title </p>
-            <p class="normal-text">Normal Texts</p>
-        </section>
-        <section class="wireframe">
-            <h2>Wireframe</h2>
-            <figcaption>
-                <img src="images/small-wirefrime.webp" alt="Mobile View Wireframe">
-                <caption>Mobile View</caption>
-            </figcaption>
-            <figcaption>
-                <img src="images/wide-wireframe.webp" alt="Desktop View Wireframe">
-                <caption>Desktop View</caption>
-            </figcaption>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/events/birthday.webp" alt="Birthday party" loading="lazy">
+                    <div class="card-content">
+                        <h3>Birthday</h3>
+                        <p>Celebrate with delicious Filipino Dishes.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/events/ribbon-cutting.webp" alt="Grand opening event" loading="lazy">
+                    <div class="card-content">
+                        <h3>Business Openings</h3>
+                        <p>Make a grand impression with a feast for your partners and guests.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/events/community-service.webp" alt="Local community gathering" loading="lazy">
+                    <div class="card-content">
+                        <h3>Community Events</h3>
+                        <p>Bringing people together with hearty, authentic Filipino flavors.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/events/conference.webp" alt="Conference" loading="lazy">
+                    <div class="card-content">
+                        <h3>Corporate Events</h3>
+                        <p>Professional service for business occasions.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/events/funeral-service.webp" alt="Funeral" loading="lazy">
+                    <div class="card-content">
+                        <h3>Funerals</h3>
+                        <p>Providing comfort through traditional food during difficult times.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/events/holiday.webp" alt="Christmas party spread" loading="lazy">
+                    <div class="card-content">
+                        <h3>Holiday Parties</h3>
+                        <p>Celebrate the season with festive platters and joyful service.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/events/private-gathering.webp" alt="Intimate dinner" loading="lazy">
+                    <div class="card-content">
+                        <h3>Private Gatherings</h3>
+                        <p>Intimate meals and family reunions made extra special.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/events/prom.webp" alt="School event catering" loading="lazy">
+                    <div class="card-content">
+                        <h3>School Events</h3>
+                        <p>Delicious and energizing meals for students and faculty alike.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/events/wedding.webp" alt="Wedding" loading="lazy">
+                    <div class="card-content">
+                        <h3>Weddings</h3>
+                        <p>Elegant catering for your special day.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p><span id="currentyear"></span> 🌴 Lance Lorenzo 🌴 Philippines</p>
+        <p><span id="currentyear"></span> 🍴 Cuisinero Catering 🍴 Philippines</p>
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>
